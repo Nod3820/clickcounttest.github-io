@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Click Count Test</title>
+  </head>
+  <body>
+    <button onclick="countClicks()">Click Me</button>
+    <p>You have clicked the button <span id="clickCount">0</span> times.</p>
+    <script>
+      function countClicks() {
+        var clickCount = document.getElementById("clickCount");
+        clickCount.textContent = parseInt(clickCount.textContent) + 1;
+      }
+    </script>
+  </body>
+</html>
